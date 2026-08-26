@@ -1,6 +1,6 @@
 package com.learning.movies.domain
 
-data class Movie(
+data class MovieDetail(
     val id: Int,
     val title: String,
     val overview: String,
@@ -8,4 +8,7 @@ data class Movie(
     val releaseDate: String?,
     val voteAverage: Double,
     val isFavorite: Boolean,
+    val genres: List<String>,
+    val runtimeMinutes: Int?,
+    val tagline: String?,
 )
